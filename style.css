@@ -249,7 +249,7 @@ button {
   top: 16%;
   left: 50%;
   transform: translate(-50%, -50%);
-  margin: 0; /* Remove margin-right to center the container */
+  margin: 0; /* Reasdasdasmove margin-right to center the container */
 }
 
 .container .preloader {
