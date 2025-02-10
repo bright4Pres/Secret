@@ -17,6 +17,53 @@
         </div>
         <p style="font-size: 50px; margin-top: -41px; margin-left: 80px;">Here's a secret? countdown for you, go wait ok thankss</p>
     </div>
-    <div class="card2">      
+    <div class="card2">
+        <div class="container">
+            <div class="preloader">
+            <span></span>
+            <span></span>
+            <span></span>
+            </div>
+            <div class="shadow"></div>
+        </div>
+        <div class="launch-time">
+                <div class="marg">
+                    <p id="days">00</p>
+                    <span>Days</span>
+                </div>
+                <div class="marg">
+                    <p id="hours">00</p>
+                    <span>Hours</span>
+                </div>
+                <div class="marg">
+                    <p id="minutes">00</p>
+                    <span>Minutes</span>
+                </div>
+                <div class="marg">
+                    <p id="seconds">00</p>
+                    <span>Seconds</span>
+            </div>
+        </div>
     </div>
+
+    <script>
+        var countDownDate = new Date("Feb 14, 2025 00:00:00").getTime();
+        var x = setInterval(function(){
+            var now = new Date().getTime();
+            var dis = countDownDate - now;
+
+            var days = Math.floor(dis / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((dis % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((dis % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((dis % (1000 * 60)) / 1000);
+
+            document.getElementById("days").innerHTML = days;
+            document.getElementById("hours").innerHTML = hours;
+            document.getElementById("minutes").innerHTML = minutes;
+            document.getElementById("seconds").innerHTML = seconds;
+
+        }, 1000);
+
+    </script>
+</body>
 </html>
