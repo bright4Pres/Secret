@@ -35,7 +35,7 @@ body {
 
 .container {
     position: absolute;
-    padding-top: 2em;
+    margin-top: 60px;
     top: 200%;
     left: 50%;
     transform: translate(-50%, -50%);
