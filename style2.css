@@ -18,8 +18,8 @@
 
 body {
     display: flex;
-    align-items: flex-start; /* Change from flex-end to flex-start */
-    margin-top: 5em; /* Use em units for margin-top */
+    align-items: flex-start;
+    margin-top: 5em; 
     justify-content: center;
     min-height: 100vh;
     background-color: var(--dark-color);
@@ -111,21 +111,21 @@ button:hover svg {
 }
 .card, .card2 {
     width: 90%;
-    max-width: 56.25em; /* 900px in em units */
-    border-radius: 3.125em; /* 50px in em units */
+    max-width: 56.25em; 
+    border-radius: 3.125em; 
     background: var(--light-color);
     box-shadow: 0.625em 0.625em 1.875em var(--light-color), -0.625em -0.625em 1.875em var(--light-color); /* 10px, 30px in em units */
-    margin: 1.875em auto; /* 30px in em units */
-    padding: 1.875em; /* 30px in em units */
-    position: relative; /* Ensure relative positioning */
-    top: 0; /* Reset top position */
-    transform: translateY(0); /* Reset transform */
+    margin: 1.875em auto; 
+    padding: 1.875em; 
+    position: relative; 
+    top: 0; 
+    transform: translateY(0); 
 }
 
 .card2 {
-    height: 12.5em; /* 200px in em units */
-    font-size: 5em; /* 80px in em units */
-    padding-top: 2.5em; /* 40px in em units */
+    height: 12.5em; 
+    font-size: 2.5em; 
+    padding-top: 2.5em; 
 }
 
 .imgcard, .imgcard2 {
@@ -194,7 +194,7 @@ button:hover svg {
 .launch-time {
     justify-content: center;
     display: flex;
-    font-size: 40px;
+    font-size: 6em; 
     text-align: center;
 }
 
@@ -286,41 +286,39 @@ button:hover svg {
     }
 }
 
-/* Responsive Design */
-@media (max-width: 48em) { /* 768px in em units */
+@media (max-width: 48em) { 
     body {
-        margin-top: 2.5em; /* Use em units for margin-top */
+        margin-top: 2.5em; 
     }
 
     .card, .card2 {
         width: 90%;
-        padding: 1.25em; /* 20px in em units */
-        transform: scale(0.8); /* Scale down the cards */
+        padding: 1.25em;
+        transform: scale(0.8); 
     }
 
     .launch-time {
-        font-size: 1.5em; /* 24px in em units */
+        font-size: 1.5em; 
     }
 
     .launch-time div {
-        flex-basis: 7.5em; /* 120px in em units */
+        flex-basis: 7.5em; 
     }
 
     button {
-        padding: 0.75em 0.9375em; /* 12px 15px in em units */
-        transform: scale(0.8); /* Scale down the button */
+        padding: 0.75em 0.9375em; 
+        transform: scale(0.8);
     }
 
     .card__title, .card2__title {
-        font-size: 1.125em; /* 18px in em units */
+        font-size: 1.125em; 
     }
 
     .card__description, .card2__description {
-        font-size: 0.75em; /* 12px in em units */
+        font-size: 0.75em;
     }
 }
 
-/* Ensure consistent sizing across all devices */
 .card, .card2, .launch-time, button, .card__title, .card2__title, .card__description, .card2__description {
     box-sizing: border-box;
     max-width: 100%;
