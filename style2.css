@@ -19,7 +19,7 @@
 body {
     display: flex;
     align-items: flex-start; /* Change from flex-end to flex-start */
-    margin-top: 150px;
+    margin-top: 10vh; /* Use relative units for margin-top */
     justify-content: center;
     min-height: 100vh;
     background-color: var(--dark-color);
@@ -110,7 +110,7 @@ button:hover svg {
 
 }
 .card, .card2 {
-    width: fit-content;
+    width: 90%;
     max-width: 900px;
     border-radius: 50px;
     background: var(--light-color);
@@ -289,7 +289,7 @@ button:hover svg {
 /* Responsive Design */
 @media (max-width: 768px) {
     body {
-        margin-top: 60px; /* Adjust margin-top for smaller screens */
+        margin-top: 5vh; /* Use relative units for margin-top */
     }
 
     .card, .card2 {
