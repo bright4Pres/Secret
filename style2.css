@@ -295,26 +295,28 @@ button:hover svg {
     .card, .card2 {
         width: 90%;
         padding: 20px;
+        transform: scale(0.8); /* Scale down the cards */
     }
 
     .launch-time {
-        font-size: 30px;
+        font-size: 24px; /* Scale down the font size */
     }
 
     .launch-time div {
-        flex-basis: 150px;
+        flex-basis: 120px; /* Scale down the flex-basis */
     }
 
     button {
-        padding: 15px 18px;
+        padding: 12px 15px; /* Scale down the padding */
+        transform: scale(0.8); /* Scale down the button */
     }
 
     .card__title, .card2__title {
-        font-size: 20px;
+        font-size: 18px; /* Scale down the font size */
     }
 
     .card__description, .card2__description {
-        font-size: 12px;
+        font-size: 12px; /* Scale down the font size */
     }
 }
 
