@@ -103,6 +103,7 @@ button {
     box-shadow: 10px 10px 30px #fff2e7,
                 -10px -10px 30px #fff2e7;
     margin: 0 auto;
+    padding: 30px;
   }
 
 .card2 {
