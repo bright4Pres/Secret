@@ -103,11 +103,11 @@ button:hover svg {
 }
 .card h1{
   padding-bottom: 40px;
+  padding-left: 0.4em;
 }
 .card p{
-  padding-left: 85px;
-  padding-right: 85px;
-
+  padding-left: 0.6em;
+  padding-right: 0.6em;
 }
 .card, .card2 {
     width: 90%;
