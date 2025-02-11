@@ -19,7 +19,7 @@
 body {
     display: flex;
     align-items: flex-start; /* Change from flex-end to flex-start */
-    margin-top: 10vh; /* Use relative units for margin-top */
+    margin-top: 5em; /* Use em units for margin-top */
     justify-content: center;
     min-height: 100vh;
     background-color: var(--dark-color);
@@ -111,21 +111,21 @@ button:hover svg {
 }
 .card, .card2 {
     width: 90%;
-    max-width: 900px;
-    border-radius: 50px;
+    max-width: 56.25em; /* 900px in em units */
+    border-radius: 3.125em; /* 50px in em units */
     background: var(--light-color);
-    box-shadow: 10px 10px 30px var(--light-color), -10px -10px 30px var(--light-color);
-    margin: 30px auto;
-    padding: 30px;
+    box-shadow: 0.625em 0.625em 1.875em var(--light-color), -0.625em -0.625em 1.875em var(--light-color); /* 10px, 30px in em units */
+    margin: 1.875em auto; /* 30px in em units */
+    padding: 1.875em; /* 30px in em units */
     position: relative; /* Ensure relative positioning */
     top: 0; /* Reset top position */
     transform: translateY(0); /* Reset transform */
 }
 
 .card2 {
-    height: 200px;
-    font-size: 80px;
-    padding-top: 40px;
+    height: 12.5em; /* 200px in em units */
+    font-size: 5em; /* 80px in em units */
+    padding-top: 2.5em; /* 40px in em units */
 }
 
 .imgcard, .imgcard2 {
@@ -287,36 +287,36 @@ button:hover svg {
 }
 
 /* Responsive Design */
-@media (max-width: 768px) {
+@media (max-width: 48em) { /* 768px in em units */
     body {
-        margin-top: 5vh; /* Use relative units for margin-top */
+        margin-top: 2.5em; /* Use em units for margin-top */
     }
 
     .card, .card2 {
         width: 90%;
-        padding: 20px;
+        padding: 1.25em; /* 20px in em units */
         transform: scale(0.8); /* Scale down the cards */
     }
 
     .launch-time {
-        font-size: 24px; /* Scale down the font size */
+        font-size: 1.5em; /* 24px in em units */
     }
 
     .launch-time div {
-        flex-basis: 120px; /* Scale down the flex-basis */
+        flex-basis: 7.5em; /* 120px in em units */
     }
 
     button {
-        padding: 12px 15px; /* Scale down the padding */
+        padding: 0.75em 0.9375em; /* 12px 15px in em units */
         transform: scale(0.8); /* Scale down the button */
     }
 
     .card__title, .card2__title {
-        font-size: 18px; /* Scale down the font size */
+        font-size: 1.125em; /* 18px in em units */
     }
 
     .card__description, .card2__description {
-        font-size: 12px; /* Scale down the font size */
+        font-size: 0.75em; /* 12px in em units */
     }
 }
 
