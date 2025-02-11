@@ -3,10 +3,27 @@
 *{
     font-family: "Yanone Kaffeesatz", serif;
 }
+:root {
+  --dark-color: #ffd7d7;
+}
+body {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: var(--dark-color);
+  overflow: hidden;
+  perspective: 1000px;
+  background-image: radial-gradient(ellipse at top, transparent 0%, var(--dark-color)), radial-gradient(ellipse at bottom, var(--dark-color), rgba(145, 255, 165, 0.885)), repeating-linear-gradient(220deg, black 0px, black 19px, transparent 19px, transparent 22px), repeating-linear-gradient(189deg, rgba(255, 255, 255, 0) 0px, rgba(255, 178, 178, 0.532) 19px, transparent 19px, transparent 22px), repeating-linear-gradient(148deg, black 0px, black 19px, transparent 19px, transparent 22px), linear-gradient(90deg, #005d0e, #f0f0f0);
+  
+}
 
 .container{
-    margin-left: 60px;
-    margin-top: 70px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0; /* Remove margin-right to center the container */
 }
 
 ::-webkit-scrollbar {
@@ -83,20 +100,19 @@ button {
     height: 280px;
     border-radius: 50px;
     background: #fff2e7;
-    box-shadow: 20px 20px 60px #fbfff5,
-                -20px -20px 60px #fff2e7;
+    box-shadow: 10px 10px 30px #fff2e7,
+                -10px -10px 30px #fff2e7;
     margin: 0 auto;
-    margin-top: 30px;
     padding: 30px;
-}
+  }
 
 .card2 {
     width: 900px;
     height: 200px;
     border-radius: 50px;
     background: #fff2e7;
-    box-shadow: 20px 20px 60px #fbfff5,
-                -20px -20px 60px #fff2e7;
+    box-shadow: 10px 10px 30px #fbfff5,
+                -10px -10px 30px #fff2e7;
     margin: 0 auto;
     margin-top: 30px;
     padding: 30px;
@@ -228,3 +244,110 @@ button {
     transform: rotate(-45deg);
   }
   
+  /* launch code */
+.launch-time{
+  justify-content: center;
+  display:flex;
+  font-size: 40px;
+  text-align: center;
+}
+.launch-time div{
+  flex-basis: 200px;
+}
+
+/* heart */
+/* From Uiversse.io by S4tyendra */ 
+.container {
+  position: absolute;
+  top: 16%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0; /* Reasdasdasmove margin-right to center the container */
+}
+
+.container .preloader {
+  animation: rotate 2.3s cubic-bezier(0.75, 0, 0.5, 1) infinite;
+}
+
+@keyframes rotate {
+  50% {
+    transform: rotate(360deg);
+  }
+
+  100% {
+    transform: rotate(720deg);
+  }
+}
+
+.preloader span {
+  --c: #f23f3f;
+  position: absolute;
+  display: block;
+  height: 64px;
+  width: 64px;
+  background: var(--c);
+  border: 1px solid var(--c);
+  border-radius: 100%;
+}
+
+.preloader span:nth-child(1) {
+  transform: translate(-28px, -28px);
+  animation: shape_1 2.3s cubic-bezier(0.75, 0, 0.5, 1) infinite;
+}
+
+@keyframes shape_1 {
+  60% {
+    transform: scale(0.4);
+  }
+}
+
+.preloader span:nth-child(2) {
+  transform: translate(28px, -28px);
+  animation: shape_2 2.3s cubic-bezier(0.75, 0, 0.5, 1) infinite;
+}
+
+@keyframes shape_2 {
+  40% {
+    transform: scale(0.4);
+  }
+}
+
+.preloader span:nth-child(3) {
+  position: relative;
+  border-radius: 0px;
+  transform: scale(0.98) rotate(-45deg);
+  animation: shape_3 2.3s cubic-bezier(0.75, 0, 0.5, 1) infinite;
+}
+
+@keyframes shape_3 {
+  50% {
+    border-radius: 100%;
+    transform: scale(0.5) rotate(-45deg);
+  }
+
+  100% {
+    transform: scale(0.98) rotate(-45deg);
+  }
+}
+
+.shadow {
+  position: relative;
+  top: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: block;
+  height: 16px;
+  width: 64px;
+  border-radius: 50%;
+  background-color: #d9d9d9;
+  border: 1px solid #d9d9d9;
+  animation: shadow 2.3s cubic-bezier(0.75, 0, 0.5, 1) infinite;
+}
+
+@keyframes shadow {
+  50% {
+    transform: translateX(-50%) scale(0.5);
+    border-color: #f2f2f2;
+  }
+}
+
