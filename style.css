@@ -3,6 +3,20 @@
 *{
     font-family: "Yanone Kaffeesatz", serif;
 }
+:root {
+  --dark-color: #ffd7d7;
+}
+body {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: var(--dark-color);
+  overflow: hidden;
+  perspective: 1000px;
+  background-image: radial-gradient(ellipse at top, transparent 0%, var(--dark-color)), radial-gradient(ellipse at bottom, var(--dark-color), rgba(145, 255, 165, 0.885)), repeating-linear-gradient(220deg, black 0px, black 19px, transparent 19px, transparent 22px), repeating-linear-gradient(189deg, rgba(255, 255, 255, 0) 0px, rgba(255, 178, 178, 0.532) 19px, transparent 19px, transparent 22px), repeating-linear-gradient(148deg, black 0px, black 19px, transparent 19px, transparent 22px), linear-gradient(90deg, #005d0e, #f0f0f0);
+  
+}
 
 .container{
     position: absolute;
@@ -86,20 +100,18 @@ button {
     height: 280px;
     border-radius: 50px;
     background: #fff2e7;
-    box-shadow: 20px 20px 60px #fbfff5,
-                -20px -20px 60px #fff2e7;
+    box-shadow: 10px 10px 30px #fff2e7,
+                -10px -10px 30px #fff2e7;
     margin: 0 auto;
-    margin-top: 80px;
-    padding: 30px;
-}
+  }
 
 .card2 {
     width: 900px;
     height: 200px;
     border-radius: 50px;
     background: #fff2e7;
-    box-shadow: 20px 20px 60px #fbfff5,
-                -20px -20px 60px #fff2e7;
+    box-shadow: 10px 10px 30px #fbfff5,
+                -10px -10px 30px #fff2e7;
     margin: 0 auto;
     margin-top: 30px;
     padding: 30px;
