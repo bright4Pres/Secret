@@ -18,7 +18,8 @@
 
 body {
     display: flex;
-    align-items: flex-end;
+    align-items: flex-start; /* Change from flex-end to flex-start */
+    margin-top: 150px;
     justify-content: center;
     min-height: 100vh;
     background-color: var(--dark-color);
@@ -37,7 +38,6 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    margin: 0;
 }
 
 ::-webkit-scrollbar {
@@ -101,6 +101,9 @@ button:hover svg {
     border-color: #ffd7d7;
     animation: beatingHeart 1.2s infinite;
 }
+.card h1{
+  padding-bottom: 40px;
+}
 
 .card, .card2 {
     width: 90%;
@@ -110,10 +113,14 @@ button:hover svg {
     box-shadow: 10px 10px 30px var(--light-color), -10px -10px 30px var(--light-color);
     margin: 30px auto;
     padding: 30px;
+    position: relative; /* Ensure relative positioning */
+    top: 0; /* Reset top position */
+    transform: translateY(0); /* Reset transform */
 }
 
 .card2 {
     height: 200px;
+    padding-top: 60px;
 }
 
 .imgcard, .imgcard2 {
