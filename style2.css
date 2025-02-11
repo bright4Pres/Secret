@@ -104,9 +104,13 @@ button:hover svg {
 .card h1{
   padding-bottom: 40px;
 }
+.card p{
+  padding-left: 85px;
+  padding-right: 85px;
 
+}
 .card, .card2 {
-    width: 90%;
+    width: fit-content;
     max-width: 900px;
     border-radius: 50px;
     background: var(--light-color);
@@ -120,7 +124,8 @@ button:hover svg {
 
 .card2 {
     height: 200px;
-    padding-top: 60px;
+    font-size: 80px;
+    padding-top: 40px;
 }
 
 .imgcard, .imgcard2 {
@@ -283,8 +288,12 @@ button:hover svg {
 
 /* Responsive Design */
 @media (max-width: 768px) {
+    body {
+        margin-top: 60px; /* Adjust margin-top for smaller screens */
+    }
+
     .card, .card2 {
-        width: 95%;
+        width: 90%;
         padding: 20px;
     }
 
@@ -307,5 +316,14 @@ button:hover svg {
     .card__description, .card2__description {
         font-size: 12px;
     }
+}
+
+/* Ensure consistent sizing across all devices */
+.card, .card2, .launch-time, button, .card__title, .card2__title, .card__description, .card2__description {
+    box-sizing: border-box;
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    font-size: 1em;
 }
 
