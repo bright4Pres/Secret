@@ -272,7 +272,7 @@ body {
   height: var(--h);
   border-top-right-radius: var(--h);
   border-bottom-left-radius: var(--h);
-  background-image: linear-gradient(to top, rgba(237, 255, 34, 0.223), #ffff5ee2);
+  background-image: linear-gradient(to top, rgba(0, 44, 9, 0.527), #044709e2);
 }
 .flower__line__leaf--1 {
   transform: rotate(70deg) rotateY(30deg);
